@@ -26,6 +26,7 @@ class Cart {
     saveCart() {
         localStorage['cart'] = JSON.stringify(this.cart);
     }
+    
     renderCart() {
         let total = 0;
         let cartDomSting = 
@@ -46,6 +47,7 @@ class Cart {
                     <div class="col-1"><button class="btn btn-sm plus">+</button></div>
                     <div class="col-1"><button class="btn btn-sm minus">-</button></div>
                 </div>`;
+     
         }
         total = total.toFixed(2);
         cartDomSting += `
